@@ -3,17 +3,18 @@ To demonstrate application autoscale feature on GKE leveraging custom metrics
 
 # Create GKE cluster
 ### Export env variables
-> <code>export ZONE=asia-southeast1-a   
-    export REGION=asia-southeast1   
-    export CLUSTER=oreilly   
-    export MACHINE_TYPE=n1-standard-1   
-    export DISK_SIZE=10GB   
-    export MAX_NODES=2   
-    export NUM_NODES=1   
-    export PROJECT_NAME=pa-rpanchal   
-    gcloud config set compute/region asia-southeast1   
-    gcloud components update   
-</code>
+<pre><code>export ZONE=asia-southeast1-a
+export REGION=asia-southeast1   
+export CLUSTER=oreilly   
+export MACHINE_TYPE=n1-standard-1   
+export DISK_SIZE=10GB   
+export MAX_NODES=2   
+export NUM_NODES=1   
+export PROJECT_NAME=pa-rpanchal   
+
+gcloud config set compute/region asia-southeast1   
+gcloud components update   
+</code></pre>
 
 ### Create Zonal Cluster
 > <code> gcloud container clusters create $CLUSTER 
