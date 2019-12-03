@@ -145,16 +145,16 @@ curl -X POST --data-urlencode "payload={\"channel\": \"#alerts\", \"username\": 
 ## Use Case#2: Use custom-metrics (HTTP request rate) to auto-scale app
 <pre><code>git clone https://gitlab.com/wuestkamp/kubernetes-scale-that-app.git 
 
-#Deploy sample application to default namespace
-kubectl apply -f hpa-sim.yaml
+#Deploy sample application to default namespace 
+kubectl apply -f hpa-sim.yaml 
 
-#Configure prometheus-operator ServiceMonitor resource to scrape metrics based on your Service definition <br/
+#Configure prometheus-operator ServiceMonitor resource to scrape metrics based on your Service definition 
 kubectl apply -f hpa-servicemonitor.yaml 
 
 #Configure auto-scaling rules based on the custom metrics 
 kubectl apply -f hpa-autoscale.yaml 
 
-#Generate load using hey (https://github.com/rakyll/hey)
+#Generate load using hey (https://github.com/rakyll/hey) 
 hey -z 5m -c 100 -m GET http://localhost:8001/api/v1/namespaces/default/services/hpa-sim:80/proxy/service\?cost\=0.5
 </code></pre>
 
