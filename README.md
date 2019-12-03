@@ -9,8 +9,8 @@ To demonstrate application autoscale feature on GKE leveraging custom metrics
 > export MACHINE_TYPE=n1-standard-1 <br/>
 > export DISK_SIZE=10GB <br/>
 > export MAX_NODES=2 <br/>
-> export PROJECT_NAME=pa-rpanchal <br/>
 > export NUM_NODES=1 <br/>
+> export PROJECT_NAME=pa-rpanchal <br/>
 > gcloud config set compute/region asia-southeast1 <br/>
 > gcloud components update
 </code>
