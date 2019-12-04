@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 26,
+  "id": 25,
   "links": [],
   "panels": [
     {
@@ -40,7 +40,7 @@
               {
                 "id": 0,
                 "op": "=",
-                "text": "N/A",
+                "text": "0",
                 "type": 1,
                 "value": "null"
               }
@@ -52,6 +52,10 @@
               {
                 "color": "green",
                 "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
               }
             ],
             "unit": "none"
@@ -616,5 +620,5 @@
   "timezone": "",
   "title": "HPA Custom Dashboard",
   "uid": "uNcFtZaWz",
-  "version": 14
+  "version": 2
 }
